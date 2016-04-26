@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Actionbar-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/actionbar"
+    style="@style/ActionBar">
+    <Button
+        android:id="@+id/btn_actionbar_withback"
+        style="@style/ActionBarLeftButton"/>
+    <Button
+        android:id="@+id/btn_actionbar_right"
+        style="@style/ActionBarRightButton"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/tv_actionbar"
+        android:layout_toRightOf="@id/btn_actionbar_withback"
+        android:layout_centerInParent="true"
+        style="@style/ActionBarTextView"/>
+</RelativeLayout>

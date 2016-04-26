@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--具体新闻页面-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    app:layout_scrollFlags="scroll|enterAlways|snap">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ff00ff">
+    <!--滚动新闻页面-->
+    <include layout="@layout/layout_scrollnews"/>
+    <!--新闻List-->
+    <include layout="@layout/layout_recycleview_pulltorefreshandload"/>
+    </LinearLayout>
+</ScrollView>

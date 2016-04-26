@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?><!--朋友圈新闻--><!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--android:orientation="vertical" android:layout_width="match_parent"--><!--android:layout_height="match_parent">--><!--Actionbar-->
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <!--在这个Layout里的内容都当做AppBar的一部分-->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <include layout="@layout/include_toolbar_hided" />
+    </android.support.design.widget.AppBarLayout>
+    <!--List-->
+    <include layout="@layout/layout_recycleview_pulltorefreshandload" />
+    <!--Button-->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="@dimen/margin_48"
+        android:layout_marginRight="@dimen/margin_8"
+        android:src="@drawable/add" />
+</android.support.design.widget.CoordinatorLayout><!--</RelativeLayout>-->

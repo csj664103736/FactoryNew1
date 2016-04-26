@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--PersonalNews评论item-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    style="@style/ListItemWithImgStyle">
+    <!--用户头像-->
+    <ImageView
+        android:id="@+id/iv_user"
+        style="@style/ListImgStyle"/>
+    <!--用户名-->
+    <TextView
+        android:id="@+id/tv_user"
+        android:layout_toRightOf="@id/iv_user"
+        android:layout_alignTop="@+id/iv_user"
+        android:textSize="@dimen/textsize_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <!--日期时间-->
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_below="@id/tv_user"
+        android:layout_toRightOf="@id/iv_user"
+        android:layout_alignBottom="@+id/iv_user"
+        android:textSize="@dimen/textsize_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <!--评论内容-->
+    <TextView
+        android:id="@+id/tv_comment"
+        android:layout_toRightOf="@id/iv_user"
+        android:textSize="@dimen/textsize_16"
+        android:layout_below="@id/tv_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

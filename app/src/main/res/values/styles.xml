@@ -1,0 +1,332 @@
+<resources>
+
+    <!--Newsapp-->
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <!--BaseStyle-->
+    <style name="BaseStyle">
+        <item name="android:layout_marginLeft">@dimen/margin_8</item>
+        <item name="android:layout_marginRight">@dimen/margin_8</item>
+    </style>
+    <!--Actionbar-->
+    <style name="ActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/height_actionbar</item>
+        <!--<item name="android:background">@color/actionbar</item>-->
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <style name="ActionBarTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/height_actionbar</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="ActionBarLeftButton">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_width">@dimen/btn_width_48</item>
+        <item name="android:layout_height">@dimen/btn_height_48</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:background">@drawable/actionbar_back</item>
+    </style>
+
+    <style name="ActionBarRightButton">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_width">@dimen/btn_width_48</item>
+        <item name="android:layout_height">@dimen/btn_height_48</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:background">@drawable/search_48</item>
+    </style>
+
+    <!--Button-->
+    <style name="ButtonStyle">
+        <item name="android:layout_marginTop">@dimen/margin_8</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">@drawable/bg_button_normal</item>
+    </style>
+
+    <!--CardView-->
+    <style name="CardViewButton">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/imageview_height_36</item>
+        <item name="android:background">@drawable/bg_button_small</item>
+    </style>
+    <!--EditText-->
+    <style name="EditTextStyle">
+        <item name="android:background">@drawable/bg_edittext</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:layout_height">43dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">@color/text_normal</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">flagNoExtractUi</item>
+    </style>
+    <!--LoadingDialog-->
+    <style name="loadingDialogStyle" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 对话框是否有遮盖 -->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!--Line-->
+    <style name="LineVerticalStyle">
+        <item name="android:layout_width">0.1dp</item>
+        <item name="android:background">#000000</item>
+        <item name="android:layout_marginTop">@dimen/margin_8</item>
+        <item name="android:layout_marginBottom">@dimen/margin_8</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--ListView-->
+    <style name="ListViewTitleStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+
+    <style name="ListViewContentStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:lines">2</item>
+    </style>
+
+    <style name="ListItemWithImgStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/height_48</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="ListImgStyle">
+        <item name="android:layout_width">@dimen/width_48</item>
+        <item name="android:layout_height">@dimen/height_48</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="ListTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/height_48</item>
+        <item name="android:layout_marginLeft">@dimen/margin_8</item>
+        <item name="android:layout_marginRight">@dimen/margin_8</item>
+        <item name="android:textSize">@dimen/textsize_16</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <!--Notice-->
+    <style name="NoticeTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:background">@drawable/bg_notice</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    <!--PopWin-->
+    <style name="PopWinStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="PopWinContentWithViewStyle">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:transformPivotY">50dp</item>
+        <item name="android:layout_marginLeft">@dimen/margin_24</item>
+        <item name="android:layout_marginRight">@dimen/margin_right_24</item>
+        <item name="android:background">@drawable/bg_popwin</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="PopWinContentStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_margin">@dimen/margin_24</item>
+    </style>
+
+    <style name="PopWinTitleStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/title_small</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_search</item>
+        <item name="android:layout_marginBottom">@dimen/matgin_top_8</item>
+    </style>
+
+    <style name="PopWinContentTextStyle">
+        <item name="android:layout_width">match_parent</item><!--不可更改，table每一列-->
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/textsize_16</item>
+    </style>
+
+    <style name="PopwinCancleButtonStyle">
+        <item name="android:layout_marginRight">@dimen/margin_right_16</item>
+        <item name="android:layout_width">@dimen/width_64</item>
+        <item name="android:layout_height">@dimen/height_btn_popwin_48</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginTop">@dimen/matgin_top_16</item>
+        <item name="android:background">@drawable/bg_popbutton</item>
+        <item name="android:textColor">@color/text_search</item>
+        <item name="android:text">Cancel</item>
+    </style>
+
+    <style name="PopwinOKButtonStyle" parent="PopwinCancleButtonStyle">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:text">OK</item>
+        <item name="android:layout_marginRight">@dimen/margin_8</item>
+    </style>
+
+    <style name="CardWhiteSytle_fillheight" parent="PopWinContentWithViewStyle">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/space_left_inner</item>
+        <item name="android:layout_marginRight">@dimen/space_right_inner</item>
+        <item name="android:layout_marginTop">@dimen/space_top_inner</item>
+        <item name="android:layout_marginBottom">@dimen/space_bottom_inner</item>
+        <item name="android:background">@drawable/bg_card_white</item>
+    </style>
+
+    <style name="CardWhiteStyle_wrapheight" parent="PopWinContentWithViewStyle">
+        <item name="android:layout_marginLeft">@dimen/space_left_inner</item>
+        <item name="android:layout_marginRight">@dimen/space_right_inner</item>
+        <item name="android:background">@drawable/bg_card_white</item>
+    </style>
+
+    <!--RadioButton-->
+    <style name="TabStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+    </style>
+    <!--===========================ActualNew===============================-->
+    <style name="style_title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="style_title_btn">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!--=============================Indiactor======================================-->
+    <!-- 去掉tab顶部的黑边 -->
+    <style name="no_title2" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+
+    </style>
+
+    <style name="no_title" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowContentOverlay">@null</item>
+
+    </style>
+
+    <style name="MyTheme" parent="no_title">
+        <item name="vpiTabPageIndicatorStyle">@style/MyWidget.TabPageIndicator</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:animationDuration">5000</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="MyWidget.TabPageIndicator" parent="Widget">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/vpi__tab_indicator</item>
+        <item name="android:paddingLeft">22dip</item>
+        <item name="android:paddingRight">22dip</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:textAppearance">@style/MyTextAppearance.TabPageIndicator</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="MyTextAppearance.TabPageIndicator" parent="Widget">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#2c3e50</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--remove this action bar-->
+        <item name="windowActionBar">false</item>
+    </style>
+
+
+    <style name="StyledIndicators" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+    </style>
+
+    <style name="CustomTabPageIndicator" parent="Widget.TabPageIndicator">
+        <item name="android:background">@drawable/tab_indicator</item>
+        <item name="android:textAppearance">@style/CustomTabPageIndicator.Text</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:dividerPadding">8dp</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:fadingEdgeLength">8dp</item>
+    </style>
+
+    <style name="CustomTabPageIndicator.Text" parent="android:TextAppearance.Medium">
+        <item name="android:typeface">monospace</item>
+        <item name="android:textColor">@drawable/selector_tabtext</item>
+    </style>
+
+    <!--Comment Indicator-->
+    <style name="CommentIndicatorTheme" parent="no_title">
+        <item name="vpiTabPageIndicatorStyle">@style/MyWidget.PersonalNewsIndicator</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:animationDuration">5000</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="MyWidget.PersonalNewsIndicator" parent="Widget">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/tab_personalnews</item>
+        <item name="android:paddingLeft">22dip</item>
+        <item name="android:paddingRight">22dip</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:textAppearance">@style/MyTextAppearance.PersonalNewsIndicator</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="MyTextAppearance.PersonalNewsIndicator" parent="Widget">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#2c3e50</item>
+    </style>
+</resources>

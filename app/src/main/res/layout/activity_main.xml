@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- 上部：ActionBar -->
+    <!--<include-->
+        <!--android:id="@+id/include"-->
+        <!--layout="@layout/layout_actionbar" />-->
+    <!-- 中部：Fragment -->
+    <RelativeLayout
+        android:id="@+id/container_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/transparent"
+        android:layout_weight="1" />
+    <!--下部：切换选项卡-->
+    <RadioGroup
+        android:layout_width="@dimen/width_128"
+        android:layout_height="@dimen/tab_height_36"
+        android:layout_alignParentBottom="true"
+        android:checkedButton="@+id/rb_left"
+        android:layout_marginBottom="@dimen/margin_8"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_left"
+            style="@style/TabStyle"
+            android:text="社"
+            android:textColor="@drawable/text_tab"
+            android:background="@drawable/bg_tab_left"/>
+
+        <RadioButton
+            android:id="@+id/rb_right"
+            style="@style/TabStyle"
+            android:text="我"
+            android:textColor="@drawable/text_tab"
+            android:background="@drawable/bg_tab_right"/>
+    </RadioGroup>
+
+</RelativeLayout>

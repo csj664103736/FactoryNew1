@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--带图片的新闻ListItem-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/margin_8"
+    android:orientation="horizontal">
+    <!--图片-->
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_alignTop="@+id/title"
+        android:layout_alignBottom="@+id/content"
+        android:layout_width="@dimen/width_64"
+        android:layout_height="@dimen/list_height_64"
+        android:src="@drawable/load_default"
+        android:paddingRight="@dimen/margin_8"/>
+    <!--Title-->
+    <TextView
+        android:id="@+id/title"
+        android:layout_toRightOf="@id/imageview"
+        style="@style/ListViewTitleStyle"/>
+    <!--Content-->
+    <TextView
+        android:id="@+id/content"
+        style="@style/ListViewContentStyle"
+        android:layout_toRightOf="@id/imageview"
+        android:layout_below="@id/title"/>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--List新闻列表-->
+    <item type="id" name="lv_view"/>
+    <item type="id" name="lv_text"/>
+    <item type="id" name="lv"/>
+</resources>

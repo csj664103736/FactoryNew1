@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--ListView 可刷新列表-->
+<com.chenshujun.factorynew.view.PullToRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/refresh_view"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00ffff">
+
+    <include layout="@layout/refresh_head" />
+    <!-- 支持所有实现Pullable接口的View -->
+
+    <com.chenshujun.factorynew.view.PullableListView
+        android:id="@+id/content_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_transparent_list"
+        android:divider="@color/gray_list"
+        android:dividerHeight="0.1dp" />
+
+    <include layout="@layout/load_more" />
+
+</com.chenshujun.factorynew.view.PullToRefreshLayout>

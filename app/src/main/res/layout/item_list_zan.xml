@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    style="@style/ListItemWithImgStyle">
+    <ImageView
+        android:id="@+id/iv_user"
+        style="@style/ListImgStyle"/>
+    <TextView
+        android:id="@+id/tv_user"
+        style="@style/ListTextStyle"
+        android:text="检查更新"/>
+</LinearLayout>
